@@ -1,4 +1,4 @@
-class UserSessionController < ApplicationController
+class UserSessionsController < ApplicationController
   
   before_filter :require_no_user, :except => ['destroy', 'create']
   
