@@ -33,7 +33,7 @@ class ClientsController < ApplicationController
   private
   
   def client
-    @client = Client.find_by_permalink(params[:id])
+    @client = Client.find(params[:id])
   end
   
 end
