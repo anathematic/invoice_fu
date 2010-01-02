@@ -1,0 +1,6 @@
+<h1>Editing Client</h1>
+
+<% semantic_form_for @client do |f| %>
+  <%= render(:partial => "form", :locals => { :f => f }) %>
+  <p><%= f.submit "Update Client" %> or <%= link_to "Back to Client", client_path(@client) %></p>
+<% end %>

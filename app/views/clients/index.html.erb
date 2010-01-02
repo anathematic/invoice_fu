@@ -1,0 +1,7 @@
+<h1>Clients</h1>
+
+<% if @clients.count > 0 %>
+<%= render(:partial => "client", :collection => @clients) %>
+<% else %>
+  <p>There are currently no clients, in the database, <%= link_to "Create One", new_client_path %></p>
+<% end %>
