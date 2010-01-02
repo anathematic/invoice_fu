@@ -1,6 +1,6 @@
 <h1>New Client</h1>
 
-<% semantic_form_for @user do |f| %>
+<% semantic_form_for @client do |f| %>
   <%= render(:partial => "form", :locals => { :f => f }) %>
   <p><%= f.submit "Create Client" %> or <%= link_to "Back to Clients", clients_path %></p>
 <% end %>
