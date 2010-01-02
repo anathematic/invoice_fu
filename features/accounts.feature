@@ -10,8 +10,8 @@ Feature: Accounts
   Scenario: I can create a new client and related accounts
     When I follow "Clients"
     And I follow "New Client"
-    And I fill in "name" with "Inner Core Designs"
-    And I fill in "email" with "thomas@icdesign.com.au"
+    And I fill in "name" with "Github Pty Ltd"
+    And I fill in "email" with "anathematic@github.com"
     And I fill in "phone number" with "Lol I'm not putting my number in this thing."
     And I press "Create Client"
     Then I should see "Successfully Created Client"
